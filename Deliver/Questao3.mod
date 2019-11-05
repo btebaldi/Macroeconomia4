@@ -1,6 +1,8 @@
 /*
- * MACRO 4
- * Bruno Tebaldi Q Barbosa e Matheus Melo
+ * Exercicio 3 da lista 1 de Macro 4
+ * Bruna Mirelle J. Silva
+ * Bruno Tebaldi Q. Barbosa
+ * Matheus A. Melo 
  */
 
 
