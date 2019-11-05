@@ -1,0 +1,101 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Some of the parameters have no value (be) when using steady. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+
+STEADY-STATE RESULTS:
+
+y 		 0
+k 		 0
+h 		 0
+i 		 0
+c 		 0
+r 		 0
+w 		 0
+A 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.1622          -0.1622                0
+          0.9472           0.9472                0
+            0.95             0.95                0
+           1.165            1.165                0
+       7.652e+15        7.652e+15                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+[Warning: Some of the parameters have no value (be) when using stoch_simul. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 1
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         eps
+eps          0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               k               h               i               c               r               w               A
+k(-1)                       0.297713        0.975000       -0.097324       -1.263989        0.443735       -0.702287        0.395037               0
+i(-1)                      -0.007286        0.025000       -0.011384       -0.189975        0.009795       -0.007286        0.004098               0
+A(-1)                       1.184009               0        0.365639        7.051948        0.635413        1.184009        0.818370        0.950000
+eps                        -1.246325               0       -0.384883       -7.423103       -0.668856       -1.246325       -0.861442       -1.000000
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                -0.001953        0.064718        0.004188       -0.461629        0.463156
+k                -0.002705        0.083693        0.007005       -0.561812        0.699269
+h                -0.000065        0.008247        0.000068        0.219659        0.087319
+i                -0.003001        0.177827        0.031623        0.009278       -0.002064
+c                -0.001855        0.058435        0.003415       -0.526879        0.607317
+r                 0.000746        0.040730        0.001659        0.456930        0.412402
+w                -0.001888        0.060322        0.003639       -0.507750        0.562220
+A                -0.000940        0.036550        0.001336       -0.285845        0.175350
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         y       k       h       i       c       r       w       A
+y           1.0000  0.8997  0.5787  0.7947  0.9850 -0.2194  0.9938  0.9617
+k           0.8997  1.0000  0.1649  0.4503  0.9615 -0.6229  0.9427  0.7459
+h           0.5787  0.1649  1.0000  0.9549  0.4291  0.6657  0.4841  0.7784
+i           0.7947  0.4503  0.9549  1.0000  0.6780  0.4156  0.7221  0.9294
+c           0.9850  0.9615  0.4291  0.6780  1.0000 -0.3839  0.9981  0.9002
+r          -0.2194 -0.6229  0.6657  0.4156 -0.3839  1.0000 -0.3264  0.0564
+w           0.9938  0.9427  0.4841  0.7221  0.9981 -0.3264  1.0000  0.9253
+A           0.9617  0.7459  0.7784  0.9294  0.9002  0.0564  0.9253  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+y           0.9811  0.9636  0.9449  0.9269  0.9104
+k           0.9984  0.9953  0.9904  0.9839  0.9759
+h           0.8840  0.8054  0.7241  0.6548  0.6014
+i           0.9088  0.8443  0.7778  0.7205  0.6757
+c           0.9928  0.9840  0.9739  0.9630  0.9517
+r           0.9483  0.8904  0.8353  0.7865  0.7465
+w           0.9893  0.9778  0.9651  0.9520  0.9391
+A           0.9620  0.9223  0.8835  0.8485  0.8192
+Total computing time : 0h00m10s
+Note: warning(s) encountered in MATLAB/Octave code
