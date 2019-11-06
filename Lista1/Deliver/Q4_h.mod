@@ -1,29 +1,29 @@
 /*
  * Exercicio 4 da lista 1 de Macro 4
- * Bruna Mirelle
+ * Bruna Mirelle J. Silva
  * Bruno Tebaldi Q. Barbosa
  * Matheus A. Melo 
  */
 
 % Variaveis
 var 
-c             // Consumo
-r             // Taxa real de juros
-i             // Taxa de juros nominal
-pi            // Inflacao
-n             // Horas trabalhadas
-w             // Salario real (W/P)
-y             // Produto
-a             // Tecnologia
-m             // Oferta real de moeda (M/P)
-nu            // Processo de choque de politica monetaria
+c             //consumo
+r             //taxa real de juros
+i             //taxa de juros nominal
+pi            //inflacao
+n             //horas trabalhadas
+w             //salario real (W/P)
+y             //produto
+a             //tecnologia
+m             //oferta real de moeda (M/P)
+nu           //processo de choque de politica monetaria
 ;
 
 % Variaveis exogenas
 varexo ea em;
 
 % Parametros
-parameters sigma beta varphi alpha  phi_pi eta rho_a rho_nu y_ss n_ss c_ss w_ss r_ss pi_ss a_ss m_ss nu_ss ;
+parameters sigma beta varphi alpha  phi_pi eta rho_a rho_nu y_ss n_ss c_ss w_ss r_ss pi_ss a_ss m_ss nu_ss;
 
 % calibracao
 sigma   = 1;
@@ -52,7 +52,7 @@ model;
 exp(c)^(-sigma) = beta*( exp(c(+1))^(-sigma) )*( exp(r));
 
 % Oferta de Trabalho
-( exp(n)^(varphi) )*( exp(c)^(sigma) )  = exp(w)/exp(p);
+( exp(n)^(varphi) )*( exp(c)^(sigma) )  = exp(w);
 
 % Market Clearing
 exp(y) = exp(c);
@@ -69,14 +69,13 @@ exp(m) = exp(y)*exp(i)^(-eta);
 % Taylor Rule
 exp(i) = ( 1/beta )*( exp(pi)^(phi_pi) )*exp(nu);
 
-%Regra de Fisher
+% Regra de Fisher
 exp(r) = exp(i)/exp(pi(+1));
 
-//Choque da tecnologia
+% Choque da tecnologia
 log(a) = rho_a*log(a(-1)) + (-1)*ea;
 
-//Choque de politica monetaria
-//exp(nu) = rho_nu*exp(nu(-1)) + em;
+% Choque de politica monetaria
 nu = rho_nu*nu(-1) + em;
 
 
@@ -93,7 +92,6 @@ pi = pi_ss;
 a = a_ss;
 nu = log(nu_ss);
 i = log(i_ss);
-
 end;
 
 check;
@@ -103,7 +101,6 @@ shocks;
 var ea = (0.01)^2;
 var em = 0.01;
 end; 
-
 
 stoch_simul(order = 1,irf=40);
 

@@ -1,0 +1,124 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Some of the parameters have no value (rho) when using steady. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+
+STEADY-STATE RESULTS:
+
+y  		 0
+c  		 0
+r  		 0
+w  		 0
+n  		 0
+m  		 0
+i  		 0
+pi 		 0
+a  		 0
+nu 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.5              0.5                0
+             0.9              0.9                0
+             1.5              1.5                0
+       1.514e+16       -1.514e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+[Warning: Some of the parameters have no value (rho) when using stoch_simul. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 2
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables          ea        em
+ea           0.000100  0.000000
+em           0.000000  0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c               r               w               n               m               i              pi               a              nu
+a(-1)                       0.900000        0.900000       -0.090000        0.900000               0        1.748250       -0.225000       -0.150000        0.900000               0
+nu(-1)                             0               0               0               0               0        0.942500       -0.250000       -0.500000               0        0.500000
+ea                         -1.000000       -1.000000        0.100000       -1.000000               0       -1.942500        0.250000        0.166667       -1.000000               0
+em                                 0               0               0               0               0        1.885000       -0.500000       -1.000000               0        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y              0.0000     0.0229     0.0005
+c              0.0000     0.0229     0.0005
+r              0.0000     0.0023     0.0000
+w              0.0000     0.0229     0.0005
+n              0.0000     0.0000     0.0000
+m              0.0000     0.0496     0.0025
+i              0.0000     0.0081     0.0001
+pi             0.0000     0.0122     0.0001
+a              0.0000     0.0229     0.0005
+nu             0.0000     0.0115     0.0001
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          ea      em
+y     100.00    0.00
+c     100.00    0.00
+r     100.00    0.00
+w     100.00    0.00
+n      74.77   25.23
+m      80.74   19.26
+i      49.67   50.33
+pi      9.88   90.12
+a     100.00    0.00
+nu      0.00  100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         y       c       r       w       m       i      pi       a      nu
+y            1.0000  1.0000 -1.0000  1.0000  0.8985 -0.7048 -0.3143  1.0000  0.0000
+c            1.0000  1.0000 -1.0000  1.0000  0.8985 -0.7048 -0.3143  1.0000  0.0000
+r           -1.0000 -1.0000  1.0000 -1.0000 -0.8985  0.7048  0.3143 -1.0000  0.0000
+w            1.0000  1.0000 -1.0000  1.0000  0.8985 -0.7048 -0.3143  1.0000  0.0000
+m            0.8985  0.8985 -0.8985  0.8985  1.0000 -0.9446 -0.6991  0.8985  0.4389
+i           -0.7048 -0.7048  0.7048 -0.7048 -0.9446  1.0000  0.8950 -0.7048 -0.7094
+pi          -0.3143 -0.3143  0.3143 -0.3143 -0.6991  0.8950  1.0000 -0.3143 -0.9493
+a            1.0000  1.0000 -1.0000  1.0000  0.8985 -0.7048 -0.3143  1.0000  0.0000
+nu           0.0000  0.0000  0.0000  0.0000  0.4389 -0.7094 -0.9493  0.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+y        0.9000  0.8100  0.7290  0.6561  0.5905
+c        0.9000  0.8100  0.7290  0.6561  0.5905
+r        0.9000  0.8100  0.7290  0.6561  0.5905
+w        0.9000  0.8100  0.7290  0.6561  0.5905
+m        0.8230  0.7021  0.6127  0.5418  0.4828
+i        0.6987  0.5281  0.4250  0.3573  0.3090
+pi       0.5395  0.3053  0.1847  0.1212  0.0865
+a        0.9000  0.8100  0.7290  0.6561  0.5905
+nu       0.5000  0.2500  0.1250  0.0625  0.0313
+Total computing time : 0h00m03s
+Note: warning(s) encountered in MATLAB/Octave code

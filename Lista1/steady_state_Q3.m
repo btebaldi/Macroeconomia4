@@ -1,5 +1,9 @@
 % Funcao que calcula o steady state
-% Alunos: Bruno Tebaldi Q Barbosa / Matheus Melo
+% Alunos: 
+% BRUNA MIRELLE DE JESUS DA SILVA
+% BRUNO TEBALDI DE QUEIROZ BARBOSA 
+% MATHEUS ANTHONY DE MELO
+
 function [vecss, SteadyState] = steady_state_Q3(parameters)
 %parameters
 sigma = parameters(1);
