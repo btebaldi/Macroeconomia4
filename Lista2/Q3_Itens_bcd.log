@@ -1,0 +1,50 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 1 auxiliary variables and equations.
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+A                		 1
+Pi               		 1
+Pi_star          		 1
+R                		 1.0101
+r                		 1.0101
+N                		 0.745359
+Y                		 0.822073
+C                		 0.822073
+W                		 0.612735
+M                		 0.789681
+D                		 1
+MC               		 0.833333
+x_one            		 2.45098
+x_two            		 2.94118
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       2.116e-16       -2.116e-16                0
+             0.5              0.5                0
+             0.5              0.5                0
+          0.6667           0.6667                0
+          0.7291           0.7291                0
+            1.25             1.25                0
+           1.439            1.439                0
+           1.515            1.515                0
+             Inf              Inf                0
+
+
+There are 4 eigenvalue(s) larger than 1 in modulus 
+for 4 forward-looking variable(s)
+
+The rank condition is verified.
+
+Total computing time : 0h00m06s
