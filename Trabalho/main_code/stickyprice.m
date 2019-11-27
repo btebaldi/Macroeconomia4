@@ -13,10 +13,10 @@ addpath ../code
 %&&&&&&&&&&&&&&&&&& block of parameters to be set by the user &&&&&&&&&&&
 %following is the set of parameter values used in the JPE:
 bet=.99;                    % Temporal discount factor
-phi1=1.5;                   %
-phi2=0.0;                   %
-N=1/3.1;                      % Total working hours
-g=.2;                       % G/Y Gov consumption of the GDP
+phi1=1.5;                   %<<<<
+phi2=0.0;                   %<<<<
+N=1/3;                      % Total working hours
+g=.2;                       % G/Y Gov consumption of the GDP<<<<
 gam=1/((1-N)/(N*(1-g))+1);  %
 sig=2;                      % CES factor
 %sig=1.0000001;%this is the log case
