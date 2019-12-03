@@ -2,7 +2,7 @@ function pltt1(imp,z,z1,Ghat,g)
 tt=1:imp;
 subplot(2,2,1)
 plot(tt,100*z(1,:),tt,100*z1(1,:),'*-')
-legend('KPR','CGG')
+% legend('KPR','CGG')
 title('output')
 ylabel('%deviation from ss')
 axis tight

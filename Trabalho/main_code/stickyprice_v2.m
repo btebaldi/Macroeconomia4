@@ -12,18 +12,20 @@ addpath ../code
 
 %&&&&&&&&&&&&&&&&&& block of parameters to be set by the user &&&&&&&&&&&
 %following is the set of parameter values used in the JPE:
-bet=.99;                    % Temporal discount factor
-phi1=1.5;                   %<<<<
-phi2=0.0;                   %<<<<
-N=1/3;                      % Total working hours
-g=.2;                       % G/Y Gov consumption of the GDP<<<<
+bet=0.9983;                    % Temporal discount factor
+phi1=1.6246;                   %<<<<
+phi2=0.07;                   %<<<<
+N=10/24;                      % Total working hours
+g=.18;                       % G/Y Gov consumption of the GDP<<<<
 gam=1/((1-N)/(N*(1-g))+1);  %
 sig=2;                      % CES factor
 %sig=1.0000001;%this is the log case
 rho=.8;                     % serial correlation of governament spending
 p=.8;                       % Propabilitiy of non zero bind
-kap=.03;                    % Price flexibility
-rhoR=0;                   % Stickness of monetary autority (0=no stick) / Interest rate smothing
+my_theta = 0.85
+my_kappa = (1-my_theta)*(1 - bet*my_theta )/my_theta 
+kap=.02;                    % Price flexibility
+rhoR=0.82;                   % Stickness of monetary autority (0=no stick) / Interest rate smothing
 rl=-.01/4;                  % stocartic discount factor lower (<0)
 Ghat=0.0;                   % Gt/G
 gam1=1;                     % gamma for when EW utility function is used (EW utility, standard separable utility function in DSGE literature)
@@ -416,7 +418,7 @@ elseif ip == 3
         ,', \gamma = ',num2str(gam),', {N} = ',num2str(N),', {g} = ',num2str(g) ...
         ,', k = ',num2str(k),', l = ',num2str(l),', Ghat = ',num2str(Ghat),', \sigma = ',num2str(sig),', \psi_{g} = ', ...
         num2str(psig),', r^l (APR) = ',num2str(400*rl)];
-    hout=suptitle(str);
+%     hout=suptitle(str);
 
 elseif ip == 4
 
